@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+{% block content %}
+<!-- <div class="container"> -->
+<div style="background-image:plain.png no-repeat;height:60 px;width:60 px">
+<h4> <a href="/">back </a></h4>
+<div class="container"  >
+    {%for row in rows%}
+    <h2 style="color: #155724"> {{row.title}}</h2>
+    <p>  {{row.content}}</p>
+    <small><p style="color:#155724">Created at : {{row.created_at}}<p> <p style="color: red;">updated at : {{row.updated_at}}</p></p>
+    	</small>
+    {% endfor %}
+</div>
+</div>
+{% endblock %}
